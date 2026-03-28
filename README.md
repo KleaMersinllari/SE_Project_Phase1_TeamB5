@@ -38,11 +38,11 @@ The application includes user profiles where students can add their preferences,
 # Roles and Task
 ## Team Leader:
 Project manager and also Full-stack 
--Architecture planning & repo setup
--Sprint planning & milestone reviews
--Database schema design
--User auth (student / landlord roles)
--Deployment & CI/CD pipeline
+- Architecture planning & repo setup
+- Sprint planning & milestone reviews
+- Database schema design
+- User auth (student / landlord roles)
+- Deployment & CI/CD pipeline
 ## Team Members:
 1. Daniel Zeneli - Listings & search, Room listing pages (map + cards), Search & filter (price, zone, type), Landlord room upload form, i18n: Albanian + English UI, Landing page & onboarding flow
 2. Elta Beqja - Real-time chat (student–student), Student profile & preferences, Roommate match suggestions, Landlord dashboard & listings, Notifications & alerts
