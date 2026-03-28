@@ -24,13 +24,13 @@ Our idea is to develop a mobile application that connects students looking for a
  To develop a user-friendly mobile application that helps students in Tirana find affordable housing and compatible roommates through a centralized and reliable platform.
 
 -Objectives:
--1.Enable students to connect and communicate with potential roommates based on location, university, or preferences
--2.Provide a centralized platform for listing available apartments, rooms, and shared housing options
--3.Reduce housing costs by facilitating shared rentals among students
--4.Improve transparency by displaying accurate information about pricing, location, and availability
--5.Simplify and speed up the process of finding accommodation
--6.Create a safe and supportive student community through in-app communication features
--7.Ensure an easy-to-use interface for both students and property owners
+- 1.Enable students to connect and communicate with potential roommates based on location, university, or preferences
+- 2.Provide a centralized platform for listing available apartments, rooms, and shared housing options
+- 3.Reduce housing costs by facilitating shared rentals among students
+- 4.Improve transparency by displaying accurate information about pricing, location, and availability
+- 5.Simplify and speed up the process of finding accommodation
+- 6.Create a safe and supportive student community through in-app communication features
+- 7.Ensure an easy-to-use interface for both students and property owners
 ## Application Description:
 The proposed application is a mobile platform designed to help students in Tirana easily find affordable accommodation and suitable roommates. It combines social networking features with a housing marketplace, creating a centralized space where students can explore housing options and connect with others.
 The main users of the application are students, who search for housing, connect with roommates, and rent apartments; landlords, who list properties and manage bookings; and the administrator (admin), who oversees the platform, verifies listings, monitors user activity, and ensures the system runs smoothly.
