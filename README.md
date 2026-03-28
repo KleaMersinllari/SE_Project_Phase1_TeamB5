@@ -21,7 +21,8 @@ Students who move to Tirana for university studies often struggle to find afford
 Our idea is to develop a mobile application that connects students looking for accommodation in Tirana in a simple, and collaborative way. The platform will allow students to create profiles, search for available apartments, and connect with others who are looking for roommates in the same area or university. The app will have a chatbox where students can communicate with other peers making it easier to form groups and rent housing together, also it will provide a marketplace where landlords can list apartments or rooms with clear details on pricing, location, and availability.
 ## Project Scope:
 -Aim:
-• To develop a user-friendly mobile application that helps students in Tirana find affordable housing and compatible roommates through a centralized and reliable platform.
+ To develop a user-friendly mobile application that helps students in Tirana find affordable housing and compatible roommates through a centralized and reliable platform.
+
 -Objectives:
 1.Enable students to connect and communicate with potential roommates based on location, university, or preferences
 2.Provide a centralized platform for listing available apartments, rooms, and shared housing options
