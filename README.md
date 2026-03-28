@@ -44,9 +44,23 @@ Project manager and also Full-stack
 - User auth (student / landlord roles)
 - Deployment & CI/CD pipeline
 ## Team Members:
-1. Daniel Zeneli - Listings & search, Room listing pages (map + cards), Search & filter (price, zone, type), Landlord room upload form, i18n: Albanian + English UI, Landing page & onboarding flow
-2. Elta Beqja - Real-time chat (student–student), Student profile & preferences, Roommate match suggestions, Landlord dashboard & listings, Notifications & alerts
-3. Melisa Lamçe - REST API (rooms, users, bookings), WebSocket server for chat, Image upload & storage, Booking & rental period logic, Security, rate limiting, GDPR
+1. Daniel Zeneli - Back-end developer
+   -  Works on listings and search
+   -  Builds room pages with map and cards
+   -  Adds filters like price, zone, and type
+   -  Creates form for landlords to upload rooms
+   -  Supports Albanian and English languages
+2. Elta Beqja - Back-end developer
+   - Real-time chat system
+   - User profiles and preferences
+   - Roommate matching logic
+   - Landlord dashboard and listings
+3. Melisa Lamçe - Front-end developer
+   - Create the login and signup screens
+   - Design and build the student profile page
+   - Build the home page with apartment listings
+   - Show room details (photos, price, location)
+   - Create the chat screen for messaging between students
 
 
 
