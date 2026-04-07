@@ -1,0 +1,368 @@
+1. Chosen Development Model
+Agile is our chosen development technique because the project requires flexibility and continuous improvement. Since student needs and housing availability may change frequently, Agile allows iterative development, quick feedback, and regular updates. It also supports collaboration between developers and users, ensuring the app meets real student needs.
+2. User Requirements
+a. Stakeholders
+Students: 
+Looking for apartments or roommates. They want affordable, safe, and convenient housing.
+Landlords:
+Want to list properties, find reliable tenants, and manage listings
+Administrator:
+Responsible for building, maintaining, oversees the platform, ensuring safety, accuracy, and smooth operation.
+b. User Stories
+As a student, I want to create an account so that I can access housing listings.
+As a student, I want to search for apartments by location so that I can find housing near my university.
+As a student, I want to filter listings by price so that I can find affordable options.
+As a student, I want to connect with roommates so that I can share rent costs.
+As a student, I want to chat with other users so that I can discuss housing details.
+As a landlord, I want to post apartment listings so that I can find tenants.
+As a landlord, I want to edit or remove listings so that I can keep information updated.
+As a student, I want to view detailed apartment information so that I can make informed decisions.
+As a student, I want to save favorite listings so that I can review them later.
+As a user, I want secure login so that my data is protected.
+
+
+3. Functional Requirements
+
+
+
+1. User Registration
+The system should allow users to register and create an account.
+Acceptance Criteria:
+User enters name, email, and password
+System validates all fields
+Email must be unique
+Account is created successfully
+Confirmation message is shown
+
+2. User Login
+Description:
+The system should allow users to log in.
+Acceptance Criteria:
+User enters valid email and password
+System verifies credentials
+User is redirected to dashboard
+Error message is shown for invalid login
+
+3. Profile Management
+Description:
+The system should allow users to update their profile.
+Acceptance Criteria:
+User edits profile information
+System validates input
+Changes are saved successfully
+Updated information is displayed
+
+4. Upload Profile Picture
+Description:
+The system should allow users to upload a profile picture.
+Acceptance Criteria:
+User selects image file
+System uploads image
+Image is displayed on profile
+Error shown for invalid format
+
+5. Filter Listings
+Description:
+The system should allow users to filter listings.
+Acceptance Criteria:
+User selects filters (price, location, type)
+System updates results instantly
+Only matching listings are shown
+
+6. Create Listing
+Description:
+The system should allow landlords to create listings.
+Acceptance Criteria:
+Landlord enters all required fields
+System validates input
+Listing is saved successfully
+Listing appears in search results
+
+7. Delete Listing
+Description:
+The system should allow landlords to delete listings.
+Acceptance Criteria:
+Landlord selects delete option
+System confirms action
+Listing is removed
+Listing no longer appears
+
+8. Save Favorites
+Description:
+The system should allow users to save listings.
+Acceptance Criteria:
+User clicks save button
+Listing is added to favorites
+Favorites list updates
+User can remove saved listings
+
+9. View Favorites
+Description:
+The system should allow users to view saved listings.
+Acceptance Criteria:
+User opens favorites section
+Saved listings are displayed
+Listings are clickable
+
+10. Send Messages (Chatbox)
+Description:
+The system should allow users to send messages.
+Acceptance Criteria:
+User opens chat
+User types and sends message
+Message is delivered instantly
+Message appears for both users
+
+11. Real-Time Chat
+Description:
+The system should support real-time communication.
+Acceptance Criteria:
+Messages appear instantly
+No page refresh needed
+Chat updates automatically
+
+12. Chat History
+Description:
+The system should store previous messages.
+Acceptance Criteria:
+Messages are saved
+User can scroll chat history
+Messages are displayed in order
+
+13. Message Notifications
+Description:
+The system should notify users of new messages.
+Acceptance Criteria:
+Notification appears for new message
+Sender name is displayed
+Notification disappears after viewing
+
+14. Report Listings/Users
+Description:
+The system should allow users to report issues.
+Acceptance Criteria:
+User selects report option
+User submits reason
+Report is sent to admin
+Confirmation message is shown
+
+15. Admin Management
+Description:
+The system should allow admins to manage users and listings.
+Acceptance Criteria:
+Admin can view users
+Admin can remove users/listings
+Changes are applied immediately
+
+16. Roommate Matching System
+Description:
+The system should match students based on preferences.
+Acceptance Criteria:
+User selects preferences (budget, habits, location)
+System suggests compatible roommates
+Matches are displayed clearly
+
+17.Interactive Map Search
+Description:
+The system should display apartments on a map.
+Acceptance Criteria:
+Listings appear on map view
+User can zoom and move map
+Clicking a location shows listing details
+Map updates based on filters
+
+18. Budget Split Calculator
+Description:
+The system should help users calculate shared rent.
+Acceptance Criteria:
+User enters total rent and number of roommates
+System calculates individual cost
+Results are displayed instantly
+Users can adjust values
+
+19. Availability Calendar
+Description:
+The system should show apartment availability dates.
+Acceptance Criteria:
+Landlord sets availability dates
+Calendar is visible to users
+Users can view available periods
+Booked dates are blocked
+
+20.In-App Appointment Scheduling
+Description:
+The system should allow users to schedule visits.
+Acceptance Criteria:
+User selects date and time
+Landlord receives request
+Confirmation is sent
+Appointment appears in schedule
+
+
+
+
+4. Non-Functional Requirements
+
+
+
+1. Student-Friendly Response Time
+Description:
+The system should provide fast responses tailored to student needs.
+Acceptance Criteria:
+Search results load in under 1.5 seconds
+Chat messages deliver in under 0.8 seconds
+Calendar updates appear instantly
+
+2. Gamified Engagement
+Description:
+The system should encourage active participation via gamification (badges, rewards).
+Acceptance Criteria:
+Users receive badges for completing profiles, posting reviews, or reporting issues
+Points are updated in real-time
+Rewards are displayed on dashboard
+
+3. Context-Aware Notifications
+Description:
+Notifications should adapt to user behavior and context.
+Acceptance Criteria:
+Only relevant alerts are shown (new matches, apartment availability, chat messages)
+User can customize notification frequency
+Notifications are delivered within 1 second of trigger
+
+4. Visual Feedback
+Description:
+The system should provide clear visual feedback for user actions.
+Acceptance Criteria:
+Buttons change state on click
+Loading indicators show progress
+Users know immediately if actions succeeded or failed
+
+5. Adaptive Mobile Experience
+Description:
+The system should optimize layout based on device and network quality.
+Acceptance Criteria:
+UI adjusts for small screens (<6 inches)
+Low-bandwidth mode loads essential content first
+No elements overlap or break
+
+6. Real-Time Safety Alerts
+Description:
+The system should notify students of potentially risky listings or users.
+Acceptance Criteria:
+Unsafe behavior triggers alert
+Alerts appear in app instantly
+Admin receives automatic report
+
+7. Social Proof Integration
+Description:
+The system should show reviews and ratings for listings and landlords.
+Acceptance Criteria:
+Ratings display immediately after submission
+Users can filter listings by reviews
+Reviews cannot be altered once posted
+
+8. Multi-Profile Management
+Description:
+The system should allow users to manage multiple profiles (e.g., student & roommate seeker).
+Acceptance Criteria:
+Users can switch profiles without logging out
+Each profile maintains separate data
+Actions are correctly attributed to selected profile
+
+9. Energy-Efficient Operation
+Description:
+The app should minimize battery and data usage.
+Acceptance Criteria:
+Background chat updates consume minimal battery
+Images load progressively to save data
+CPU usage remains under 30% during normal operations
+
+10. AI-Powered Fraud Detection
+Description:
+The system should detect fake listings automatically.
+Acceptance Criteria:
+Suspicious listings are flagged
+Admin receives automated alerts
+Users are warned before contacting flagged listings
+
+11. Privacy by Design
+Description:
+The system should protect sensitive student data automatically.
+Acceptance Criteria:
+Default privacy settings limit profile visibility
+Users can control who sees personal information
+Chat history is encrypted
+
+12. Multi-Language Adaptation
+Description:
+The system should adapt content to multiple languages.
+Acceptance Criteria:
+Interface supports at least 3 languages
+Translations are contextually accurate
+User can switch language without reloading
+
+13. AI-Based Search Ranking
+Description:
+The system should rank search results using AI based on relevance.
+Acceptance Criteria:
+Most relevant listings appear first
+Rankings adjust dynamically to user behavior
+Users can manually override rankings
+
+14. Stress-Tested Load Handling
+Description:
+The system should handle student rush hours (start of semester).
+Acceptance Criteria:
+Supports 2,000+ concurrent users
+Search and chat performance remains smooth
+No crashes during peak hours
+
+15. Offline Mode Preview
+Description:
+The system should allow users to view saved listings offline.
+Acceptance Criteria:
+Previously saved listings load without internet
+Chat requires connection, but other features work offline
+Offline data syncs automatically when online
+
+16. Customizable Dashboard
+Description:
+The system should let users customize their home screen.
+Acceptance Criteria:
+Users can reorder modules (matches, listings, chat)
+Changes are saved automatically
+Dashboard updates dynamically
+
+17. Continuous Improvement Feedback Loop
+Description:
+The system should collect anonymous feedback for improvement.
+Acceptance Criteria:
+Feedback form is available in app
+User suggestions are collected automatically
+Admin receives summarized reports weekly
+
+18. Interactive Help System
+Description:
+The system should provide contextual guidance to assist users in navigating features.
+Acceptance Criteria:
+Users can access tips or tutorials within any page
+Step-by-step guides appear when needed (e.g., posting a listing, sending a message)
+Help content updates automatically as new features are added
+
+19. Predictive Availability Alerts
+Description:
+The system should predict and notify students about upcoming apartment availability.
+Acceptance Criteria:
+System analyzes trends and past listings to forecast openings
+Alerts are sent 1–2 weeks before expected availability
+Users can opt in/out of predictive notifications
+
+20. Eco-Friendly Data Usage
+Description:
+The system should optimize network usage to reduce data consumption for students on limited plans.
+Acceptance Criteria:
+Images and media are compressed without quality loss
+Only essential content loads on low-bandwidth connections
+Data usage per session is tracked and optimized
+
+
