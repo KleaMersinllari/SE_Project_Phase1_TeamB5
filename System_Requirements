@@ -106,16 +106,7 @@ Acceptance Criteria:
 Favorites list is displayed
 Listings are clickable
 
-11. Send Messages
-
-Description: Users can send messages to each other.
-Acceptance Criteria:
-User opens chat
-User sends message
-Message is delivered
-Message appears for both users
-
-12. Real-Time Chat
+11. Real-Time Chat
 Description:
 The system should support real-time communication.
 Acceptance Criteria:
@@ -123,7 +114,7 @@ Messages appear instantly
 No page refresh needed
 Chat updates automatically
 
-13. View Chat History
+12. View Chat History
 
 Description: Users can view past conversations.
 Acceptance Criteria:
@@ -131,7 +122,7 @@ Messages are saved
 Messages are displayed in order
 User can scroll history
 
-14. Message Notifications
+13. Message Notifications
 
 Description: Users receive notifications for new messages.
 Acceptance Criteria:
@@ -139,7 +130,7 @@ Notification appears for new message
 Sender is identified
 Notification disappears after viewing
 
-15. Report Listings/Users
+14. Report Listings/Users
 
 Description:
 The system should allow users to report issues.
@@ -149,7 +140,7 @@ User submits reason
 Report is sent to admin
 Confirmation message is shown
 
-16.Admin Management
+15.Admin Management
 
 Description: Admin can manage system content.
 Acceptance Criteria:
@@ -157,7 +148,7 @@ Admin can view users
 Admin can remove users or listings
 Changes are applied
 
-17. Roommate Matching System
+16. Roommate Matching System
 Description:
 The system should match students based on preferences.
 Acceptance Criteria:
@@ -217,7 +208,7 @@ User can send message successfully
 
 4. Non-Functional Requirements
 
-1. Student-Friendly Response Time
+1. Response Time
 Description:
 The system should provide fast responses tailored to student needs.
 Acceptance Criteria:
@@ -296,7 +287,7 @@ Data restored within 24 hours
 
 Description: The system should support multiple languages.
 Acceptance Criteria:
-At least 2–3 languages supported
+English and Albanian are supported as default languages
 Users can switch language easily
 
 12. Database Performance
@@ -348,12 +339,13 @@ Acceptance Criteria:
 HTTPS used for all communication
 Passwords hashed
 
-19. Offline Capability (Limited)
-
-Description: Some features should work offline.
+19. Cross-Platform Compatibility
+Description: The system should function correctly across different browsers and devices.
 Acceptance Criteria:
-Saved listings accessible offline
-Data syncs when connection returns
+App works on Chrome, Safari, and Firefox browsers
+Interface adapts correctly to different screen sizes
+No functionality is lost on older device versions
+Tested on both Android and iOS devices
 
 20. UI Responsiveness
 
@@ -363,11 +355,12 @@ Buttons respond immediately
 No lag when interacting
 
 21. System Feedback
-
-Description: Users should always know what is happening.
+Description: The system should inform users about the result of every action they perform so they are never left confused or uncertain about what is happening
 Acceptance Criteria:
-Loading indicators displayed
-Success/error messages shown clearly
+A loading spinner appears whenever the app is waiting for a response
+A green success message appears after completing actions like saving or sending
+A red error message appears when an action fails with a clear reason
+All feedback messages disappear automatically after 3–5 seconds
 
 22. System Uptime
 
@@ -408,10 +401,7 @@ Reports are created by users when they report a listing or another user, and eac
 The email field in the Users table is unique, ensuring no duplicate accounts. All listings must reference a valid landlord, and all messages and favorites must reference valid users. This ensures data integrity and consistency across the system.
 
 c. Technologies Used
-The system is developed using Python for backend development due to its simplicity and ability to handle server-side logic.
-The frontend uses HTML, CSS, and JavaScript to create a responsive and user-friendly interface.
-MySQL is used as the database for efficient and structured data management.
-These technologies were selected because they are widely used, easy to implement, and suitable for building scalable web and mobile applications.
+The system is developed using Python for backend development due to its simplicity and ability to handle server-side logic. The frontend is built using React Native, which allows the application to run on both Android and iOS devices from a single codebase. MySQL is used as the database for efficient and structured data management. These technologies were selected because they are widely used, easy to implement, and suitable for building scalable and responsive mobile applications.
 
 d. User Interface Design
 The interface is designed as a mobile application for students and landlords. Students can browse apartment listings, search and filter results, save favorite listings, and communicate with other users through an in-app messaging feature. Landlords can create and manage apartment listings.
@@ -419,7 +409,4 @@ The interface includes a login and registration page, a home page with apartment
 The design is simple and user-friendly, with clear navigation and buttons for key actions such as searching, saving listings, and contacting landlords. The layout is optimized for mobile devices to ensure ease of use for students.
 
 e. Security Measures
-The system uses user authentication to ensure that only registered users can access the platform. Each user must log in with a valid email and password.
-Passwords are securely stored using encryption (hashing) to protect user data from unauthorized access.
-Role-based access control is implemented so that students, landlords, and administrators have different permissions within the system. For example, only landlords can create and manage listings, while only admins can manage users and reports.
-All data sent between the frontend and backend is secured using HTTPS to protect communication. User input is also validated to prevent invalid or malicious data from being entered into the system.
+The system uses user authentication to ensure that only registered users can access the platform. Each user must log in with a valid email and password. Passwords are securely stored using encryption (hashing) to protect user data from unauthorized access. Role-based access control is implemented so that students, landlords, and administrators have different permissions within the system. For example, only landlords can create and manage listings, while only admins can manage users and reports. All data sent between the frontend and backend is secured using HTTPS to protect communication between the client and server from interception or tampering. Additionally, user sessions expire automatically after a period of inactivity to prevent unauthorized access to accounts.
