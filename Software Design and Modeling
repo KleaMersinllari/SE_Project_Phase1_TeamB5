@@ -1,1 +1,53 @@
 1. Software Architecture
+
+1.1 System Architecture
+The Student Housing App follows a three-tier client-server architecture consisting of a mobile frontend, a REST API backend, and a relational database.
+
+System Flow: STUDENT: Searching and Booking an Apartment
+
+Student searches for an apartment with filters (Frontend)
+Request goes to Backend
+Backend checks Database (Listings Table — searches for apartments that match the price, location, and availability filters the student selected)
+Backend sends matching apartment results back to Frontend
+Student selects an apartment and confirms booking → stored in Database (Bookings Table — saves the student ID, listing ID, date of request, and status = Pending)
+
+
+System Flow:STUDENT: Roommate Matching
+
+Student sets preferences and budget (Frontend)
+Request sent to Roommate Matching Component (Backend)
+Backend queries Users Table for compatible profiles
+Compatibility scores are computed and sorted
+Suggested roommates returned to the student
+Student initiates chat via Chat Component
+
+STUDENT — Using the Chat
+
+Student opens chat and sends a message to a landlord or roommate (Frontend)
+Request goes to Backend
+Backend checks Database (Messages Table — retrieves the conversation history between the two users)
+Backend sends message history back to Frontend
+Student sends new message → stored in Database (Messages Table — saves sender ID, receiver ID, message content, and timestamp)
+
+
+System Flow: LANDLORD: Creating and Managing a Listing
+
+Landlord fills in apartment details and submits a new listing (Frontend)
+Request goes to Backend
+Backend checks Database (Listings Table — verifies no duplicate listing exists for the same address and landlord)
+Backend sends confirmation back to Frontend
+Landlord confirms listing submission → stored in Database (Listings Table — saves title, description, price, location, availability date, photos, landlord ID, and status = Pending Review)
+
+
+System Flow — ADMINISTRATOR: Verifying and Managing the Platform
+
+Administrator opens the pending listings dashboard (Frontend)
+Request goes to Backend
+Backend checks Database (Listings Table — fetches all listings where status = Pending Review, and Reports Table — fetches all unresolved user reports)
+Backend sends pending listings and reports back to Frontend
+Administrator approves or rejects a listing → stored in Database (Listings Table — status updated to Verified or Rejected, and Landlord is notified)
+
+Component Diagram (UML)
+
+
+
